@@ -10,10 +10,10 @@ public class AdapterTest {
         System.out.println("Hinzufügen: " + stackAdapter.push("GEHT"));
         System.out.println("Hinzufügen: " + stackAdapter.push("ES"));
         System.out.println("Hinzufügen: " + stackAdapter.push("DIR?"));
-        System.out.println("Letztes Element entfernt: " + stackAdapter.pop());
-        System.out.println("Neues letztes Element: " + stackAdapter.peek());
-        System.out.println("Letztes Element entfernt: " + stackAdapter.pop());
-        System.out.println("Neues letztes Element: " + stackAdapter.peek());
+        System.out.println("Oberstes Element vom Stack entfernt: " + stackAdapter.pop());
+        System.out.println("Neues oberstes Element: " + stackAdapter.peek());
+        System.out.println("Oberstes Element vom Stack entfernt: " + stackAdapter.pop());
+        System.out.println("Neues oberstes Element: " + stackAdapter.peek());
         System.out.println("Ist der Stack am Ende leer? " + stackAdapter.empty());
     }
 }
