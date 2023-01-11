@@ -1,16 +1,19 @@
 public class AdapterTest {
     public static void main(String[] args) {
-        StackAdapter<String> stack = new StackAdapter<>();
+        // Initialisierung des Stack-Adapters
+        StackAdapter<String> stackAdapter = new StackAdapter<>();
 
-        System.out.println("Ist der Stack zu Beginn leer? " + stack.empty());
-        System.out.println("Hinzufügen:" + stack.push("HALLO"));
-        System.out.println("Hinzufügen:" + stack.push("WIE"));
-        System.out.println("Hinzufügen:" + stack.push("GEHT"));
-        System.out.println("Hinzufügen:" + stack.push("ES"));
-        System.out.println("Hinzufügen:" + stack.push("DIR?"));
-        System.out.println("Letztes Element entfernt: " + stack.pop());
-        System.out.println("Neues letztes Element: " + stack.peek());
-        System.out.println("Ist der Stack am Ende leer? " + stack.empty());
-
+        // Testszenario
+        System.out.println("Ist der Stack zu Beginn leer? " + stackAdapter.empty());
+        System.out.println("Hinzufügen: " + stackAdapter.push("HALLO"));
+        System.out.println("Hinzufügen: " + stackAdapter.push("WIE"));
+        System.out.println("Hinzufügen: " + stackAdapter.push("GEHT"));
+        System.out.println("Hinzufügen: " + stackAdapter.push("ES"));
+        System.out.println("Hinzufügen: " + stackAdapter.push("DIR?"));
+        System.out.println("Letztes Element entfernt: " + stackAdapter.pop());
+        System.out.println("Neues letztes Element: " + stackAdapter.peek());
+        System.out.println("Letztes Element entfernt: " + stackAdapter.pop());
+        System.out.println("Neues letztes Element: " + stackAdapter.peek());
+        System.out.println("Ist der Stack am Ende leer? " + stackAdapter.empty());
     }
 }
